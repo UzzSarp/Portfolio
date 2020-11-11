@@ -1,0 +1,300 @@
+@media screen and (max-width:1024px){
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .mb-4 {
+    text-align: center;
+  }
+  .col-md-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .cloud {
+    align-items: center;
+    z-index: 1;
+    height: 55px;
+  }
+
+  .arrow {
+    align-items: center;
+    z-index: -1;
+    height: 30px;
+    padding-left: 22px !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: 5vh;
+    background-color: rgba(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .logo {
+    width: 50%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    background: var(--about-bg-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-working-hours {
+    border-left: 2px solid;
+    padding-left: 3.5rem;
+  }
+  
+  .about-working-hours strong {
+    color: var(--white-color);
+    opacity: 0.85;
+  }
+  
+  .team-thumb {
+    position: relative;
+  }
+  
+  .team-info {
+    background: var(--white-color);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .team-info span {
+    font-weight: var(--font-weight-light);
+    opacity: 0.85;
+  }
+  
+  .team-info .social-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .team-info .social-icon li {
+    display: block;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .icon {
+    padding-top: 0;
+  }
+
+  span {
+    width: 50%;
+  }
+  .col-md-4, .col-sm-4{
+    padding-bottom: 20px;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  /* services style */
+  #Services .services-wrapper {
+    display: block;
+  }
+  #Services .each-service {
+    max-width: 100%;
+    margin: 0 0 50px;
+  }
+  #Services {
+    padding: 70px 0;
+  }
+  #Services .each-service:last-child {
+    margin: 0;
+  }
+  /* porfolio style */
+  #Portfolio {
+    padding: 70px 0px 0px 0px;
+  }
+  #Portfolio .portfolio-wrapper .each-portfolio {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 0 10px;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap {
+    opacity: 1;
+    height: auto;
+    top: auto;
+    bottom: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-title {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-desc {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
+    top: 0;
+    transform: translateY(0%);
+  }
+  .hidden-lg-up {
+    display: block;
+  }
+  .hidden-md-down {
+    display: none;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* services section. style */
+  #Services .each-service {
+    max-width: 100%;
+    margin: 0 0 50px;
+  }
+  #Services .each-service:last-child {
+    margin: 0;
+  }
+  /* portfolio section style */
+  #Portfolio .portfolio-wrapper .each-portfolio {
+    position: relative;
+    width: calc(50% - 10px);
+    float: left;
+    margin: 0 5px 10px;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap {
+    position: relative;
+    opacity: 1;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-title {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-desc {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
+    top: 0;
+    transform: translateY(0%);
+  }
+  #Services .block-heading {
+    margin-bottom: 70px;
+  }
+  .block-heading {
+    margin-bottom: 30px;
+  }
+  #ContactUs .contact-title {
+    margin: 0 0 20px;
+  }
+  #ContactUs .add-title {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .hidden-lg-up {
+    display: block;
+  }
+  .hidden-md-down {
+    display: none;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header style */
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #Header .site-logo-wrap .logo img {
+    width: 60px;
+  }
+  /* Hero banner style */
+  #HeroBanner .hero-content h1 {
+    font-size: 28px;
+  }
+  #HeroBanner .hero-content p {
+    font-size: 20px;
+  }
+  #HeroBanner .hero-content a {
+    font-size: 18px;
+  }
+  /* mobile menu style */
+  #Header .mobile-menu {
+    width: 300px;
+    left: -300px;
+  }
+  #Header .mobile-menu ul {
+    margin-top: 100px;
+  }
+  /* service section style*/
+  #Services .each-service {
+    max-width: calc(50% - 30px);
+  }
+  /* porfolio section style */
+  #Portfolio .portfolio-wrapper .each-portfolio {
+    width: calc(50% - 10px);
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap {
+    position: relative;
+    opacity: 1;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-title, #Portfolio .each-portfolio .hover-cont-wrap .p-desc {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
+    top: 0;
+    transform: translateY(0%);
+  }
+  .hidden-lg-up {
+    display: block;
+  }
+  .hidden-md-down {
+    display: none;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* portfolio section style */
+  #Portfolio .each-portfolio .hover-cont-wrap {
+    position: relative;
+    opacity: 1;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .p-title, #Portfolio .each-portfolio .hover-cont-wrap .p-desc {
+    top: 0;
+  }
+  #Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
+    top: 0;
+    transform: translateY(0%);
+  }
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}

@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body, html {
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.hero-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-image.jpg");
+
+height: 100vh;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: rgba(51, 51, 51, 0);
+  transition: background-color 2s ease 0s;
+}
+
+.navbar.opaque {
+  background-color: rgba(51, 51, 51, 1);
+  transition: background-color 2s ease 0s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  margin-top: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.nav-links a::after {
+  text-decoration: none;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+/* The three lines on mobile view */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-active {
+  transform: translateX(0%) !important;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.about {
+  background: var(--about-bg-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-working-hours {
+  border-left: 2px solid;
+  padding-left: 3.5rem;
+}
+
+.about-working-hours strong {
+  color: var(--white-color);
+  opacity: 0.85;
+}
+
+.team-thumb {
+  position: relative;
+}
+
+.team-info {
+  background: var(--white-color);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+  padding: 20px;
+  position: relative;
+}
+
+.team-info span {
+  font-weight: var(--font-weight-light);
+  opacity: 0.85;
+}
+
+.team-info .social-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.team-info .social-icon li {
+  display: block;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.language {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(51, 51, 51);
+  text-align: center;
+}
+
+.language h2, span{
+  text-align: center;
+  color: #a6a6a6;
+}
+
+.icon {
+  padding-top: 50px;
+  font-size: 40px;
+  min-height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.fab, .fas {
+  color: #a6a6a6;;
+}
+
+#Services {
+	padding: 100px 0 50px;
+	background-color: #fafafa;
+}
+
+#Services h2, p {
+  text-align: center;
+}
+#Services .block-heading {
+	margin-bottom: 100px;
+}
+#Services .block-heading p:last-of-type {
+	margin: 0;
+}
+#Services .services-wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#Services .each-service {
+	position: relative;
+	text-align: center;
+	max-width: calc(33.33% - 30px);
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  margin: 0 15px 50px;
+  padding: 55px 20px 25px;
+}
+#Services .each-service .service-icon {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 15px;
+	background-color: rgba(51, 51, 51);
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+}
+#Services .each-service .service-icon i {
+	font-size: 24px;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+#Services .each-service:hover .service-icon {
+	background-color: #ffffff;
+	border: 1px solid #a6a6a6;
+	transition: all 0.2s ease-in-out;
+}
+#Services .each-service:hover .service-icon i {
+	color: #a6a6a6;
+	transition: all 0.2s ease-in-out;
+}
+#Services .each-service h5 {
+	margin: 0 0 10px;
+}
+#Services .each-service p:last-child {
+	margin: 0;
+}
+
+#Portfolio {
+	background-color: #f2f2f2;
+	padding: 80px 0px 80px 0px;
+}
+
+#Portfolio h2, p {
+  text-align: center;
+}
+#Portfolio .block-heading p:last-of-type {
+	margin: 0;
+}
+#Portfolio .portfolio-wrapper .each-portfolio {
+	position: relative;
+	width: calc(33.3% - 10px);
+	float: left;
+	margin: 0 5px 10px;
+	text-decoration: none;
+	outline: 0 none;
+}
+#Portfolio .each-portfolio img {
+	width: 100%;
+	height: 250px;
+}
+#Portfolio .each-portfolio .hover-cont-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51, 51, 51, 0.8);
+	color: #fff;
+	display: block;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	padding: 20px;
+}
+#Portfolio .each-portfolio .hover-cont-wrap .p-title {
+	font-size: 22px;
+	color: #fff;
+	position: relative;
+	top: -100px;
+	transition: top 0.3s ease-in-out;
+}
+#Portfolio .each-portfolio .hover-cont-wrap .p-desc {
+	position: relative;
+	top: 100px;
+	transition: top 0.3s ease-in-out;
+	color: #fff;
+	margin: 0;
+}
+#Portfolio .each-portfolio .hover-cont-wrap .icon-div {
+	font-size: 25px;
+}
+#Portfolio .each-portfolio .hover-cont-wrap .hover-cont-block {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#Portfolio .portfolio-wrapper .each-portfolio:hover .hover-cont-wrap {
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+#Portfolio .portfolio-wrapper .each-portfolio:hover .hover-cont-wrap .p-title, #Portfolio .portfolio-wrapper .each-portfolio:hover .hover-cont-wrap .p-desc {
+	top: 0;
+	transition: top 0.3s ease-in-out;
+}
+.fancybox-toolbar button {
+	display: none !important;
+}
+.fancybox-toolbar .fancybox-button.fancybox-button--close {
+	display: inline-block !important;
+}
+
+#Contact {
+  padding: 80px 0 80px 0;
+}
+#Contact h2, p {
+  text-align: center;
+}
+
+/* Input form */
+.webform {
+  position: center;
+}
+.webform input,
+button#submit-button {
+  height: calc(2.25rem + 20px);
+}
+
+.form-control {
+  border-radius: var(--border-radius-small);
+  margin: 1.3rem 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--dark-color);
+}
+
+button#submit-button {
+  background: var(--dark-color);
+  border-color: transparent;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button#submit-button:hover {
+  background: var(--primary-color);
+}
+
+.contact h2 + p {
+  max-width: 90%;
+}
